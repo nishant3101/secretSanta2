@@ -237,10 +237,6 @@ const LoginPage: React.FC<{ onLogin: (u: User) => void }> = ({ onLogin }) => {
               {loading ? 'Signing In...' : 'Sign In'}
           </Button>
         </form>
-        
-        <div className="mt-6 text-center text-xs text-slate-400">
-            <p>Admin Login: {ADMIN_CREDENTIALS.username} / {ADMIN_CREDENTIALS.password}</p>
-        </div>
       </Card>
     </div>
   );
