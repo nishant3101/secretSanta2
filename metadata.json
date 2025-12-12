@@ -1,0 +1,5 @@
+{
+  "name": "Secret Santa Manager",
+  "description": "A simple, festive Secret Santa organizer with an embedded-style local database.",
+  "requestFramePermissions": []
+}
