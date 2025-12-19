@@ -10,13 +10,13 @@ export const Button: React.FC<ButtonProps> = ({
   className = '', 
   ...props 
 }) => {
-  const baseStyle = "px-4 py-2 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed";
+  const baseStyle = "px-5 py-2.5 rounded-sm font-medium transition-all duration-300 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed uppercase tracking-wider text-xs";
   
   const variants = {
-    primary: "bg-red-600 hover:bg-red-700 text-white focus:ring-red-500",
-    secondary: "bg-green-700 hover:bg-green-800 text-white focus:ring-green-600",
-    danger: "bg-red-100 text-red-700 hover:bg-red-200 focus:ring-red-500",
-    outline: "border-2 border-slate-200 hover:border-slate-300 text-slate-700 focus:ring-slate-400"
+    primary: "bg-lodha-gold hover:bg-lodha-goldDark text-white shadow-md hover:shadow-lg",
+    secondary: "bg-lodha-slate hover:bg-lodha-slateLight text-white",
+    danger: "border border-red-200 text-red-600 hover:bg-red-50",
+    outline: "border border-lodha-gold text-lodha-gold hover:bg-lodha-gold hover:text-white"
   };
 
   return (

@@ -3,8 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Secret Santa</title>
+    <title>Lodha | Secret Santa Exchange</title>
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              lodha: {
+                gold: '#C5A059',
+                goldDark: '#A67C52',
+                slate: '#1A1A1A',
+                slateLight: '#333333',
+                cream: '#F9F7F2',
+              }
+            }
+          }
+        }
+      }
+    </script>
   <script type="importmap">
 {
   "imports": {
@@ -19,7 +42,7 @@
 }
 </script>
 </head>
-  <body class="bg-slate-50 text-slate-900">
+  <body class="bg-[#F9F7F2] text-lodha-slate font-sans">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
